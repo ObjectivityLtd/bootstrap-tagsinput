@@ -54,6 +54,8 @@ Current Library Versions:
 Libraries for testing go in the **/lib** directory.
 
 ## History
+- 0.8.1
+  - [Fix: events add and remove - add scope apply](https://github.com/ObjectivityLtd/bootstrap-tagsinput/pull/1)
 - 0.8.0
   - [Add possibility skip "change" event after "add", "remove", "removeAll"](https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/pull/429)
   - [Please add version to header of non-minified version.](https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/issues/438)

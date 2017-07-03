@@ -1,5 +1,5 @@
 /*
- * bootstrap-tagsinput v0.8.0
+ * bootstrap-tagsinput v0.8.1
  * 
  */
 
@@ -53,14 +53,18 @@ angular.module('bootstrap-tagsinput', [])
         }
 
         select.on('itemAdded', function(event) {
-          if (scope.model.indexOf(event.item) === -1)
+          if (scope.model.indexOf(event.item) === -1) {
             scope.model.push(event.item);
+            scope.$apply();
+          }
         });
 
         select.on('itemRemoved', function(event) {
           var idx = scope.model.indexOf(event.item);
-          if (idx !== -1)
+          if (idx !== -1) {
             scope.model.splice(idx, 1);
+            scope.$apply();
+          }
         });
 
         // create a shallow copy of model's current state, needed to determine
