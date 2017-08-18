@@ -55,7 +55,7 @@ Libraries for testing go in the **/lib** directory.
 
 ## History
 - 0.8.2
-  - [Fix: events add and remove - add onChange callback]()
+  - [Fix: events add and remove - add onChange callback](https://github.com/ObjectivityLtd/bootstrap-tagsinput/commit/bb197c5df8e291fc3c72e70077e6e3a0f6435361)
 - 0.8.1
   - [Fix: events add and remove - add scope apply](https://github.com/ObjectivityLtd/bootstrap-tagsinput/pull/1)
 - 0.8.0
