@@ -54,6 +54,8 @@ Current Library Versions:
 Libraries for testing go in the **/lib** directory.
 
 ## History
+- 0.8.2
+  - [Fix: events add and remove - add onChange callback]()
 - 0.8.1
   - [Fix: events add and remove - add scope apply](https://github.com/ObjectivityLtd/bootstrap-tagsinput/pull/1)
 - 0.8.0
