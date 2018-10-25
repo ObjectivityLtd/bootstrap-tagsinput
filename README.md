@@ -1,7 +1,7 @@
 # Bootstrap Tags Input [![Build Status](https://travis-ci.org/bootstrap-tagsinput/bootstrap-tagsinput.svg?branch=master)](https://travis-ci.org/bootstrap-tagsinput/bootstrap-tagsinput)
 Bootstrap Tags Input is a jQuery plugin providing a Twitter Bootstrap user interface for managing tags.
 
-Current stable version: **v0.8.0**
+Current stable version: **v0.8.3**
 
 ## Usage
 Examples can be found [here](http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/).
@@ -55,7 +55,7 @@ Libraries for testing go in the **/lib** directory.
 
 ## History
 - 0.8.3
-  - [Fix: add autoconfirm values on focus out]
+  - [Fix: add autoconfirm values on focus out](https://github.com/ObjectivityLtd/bootstrap-tagsinput/commit/c123391dce1c46bbb73cfba8341c598a4f97dd38)
 - 0.8.2
   - [Fix: events add and remove - add onChange callback](https://github.com/ObjectivityLtd/bootstrap-tagsinput/commit/bb197c5df8e291fc3c72e70077e6e3a0f6435361)
 - 0.8.1
