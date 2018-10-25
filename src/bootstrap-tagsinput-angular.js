@@ -34,13 +34,11 @@ angular.module('bootstrap-tagsinput', [])
             : null;
 
         select.tagsinput(scope.$parent[attrs.options || ''] || {
-          typeahead : {
-            source   : angular.isFunction(typeaheadSource) ? typeaheadSource : null
-          },
+          typeahead: angular.isFunction(typeaheadSource) ? { source: typeaheadSource } : undefined,
           itemValue: getItemProperty(scope, attrs.itemvalue),
-          itemText : getItemProperty(scope, attrs.itemtext),
-          confirmKeys : getItemProperty(scope, attrs.confirmkeys) ? JSON.parse(attrs.confirmkeys) : [13],
-          tagClass : angular.isFunction(scope.$parent[attrs.tagclass]) ? scope.$parent[attrs.tagclass] : function(item) { return attrs.tagclass; }
+          itemText: getItemProperty(scope, attrs.itemtext),
+          confirmKeys: getItemProperty(scope, attrs.confirmkeys) ? JSON.parse(attrs.confirmkeys) : [13],
+          tagClass: angular.isFunction(scope.$parent[attrs.tagclass]) ? scope.$parent[attrs.tagclass] : function (item) { return attrs.tagclass; }
         });
 
         for (var i = 0; i < scope.model.length; i++) {

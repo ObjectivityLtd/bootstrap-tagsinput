@@ -54,6 +54,8 @@ Current Library Versions:
 Libraries for testing go in the **/lib** directory.
 
 ## History
+- 0.8.3
+  - [Fix: add autoconfirm values on focus out]
 - 0.8.2
   - [Fix: events add and remove - add onChange callback](https://github.com/ObjectivityLtd/bootstrap-tagsinput/commit/bb197c5df8e291fc3c72e70077e6e3a0f6435361)
 - 0.8.1
