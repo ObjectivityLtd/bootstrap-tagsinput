@@ -16,7 +16,8 @@ angular.module('bootstrap-tagsinput', [])
   return {
     restrict: 'EA',
     scope: {
-      model: '=ngModel'
+      model: '=ngModel',
+      onChanged: '&onChanged'
     },
     template: '<select multiple></select>',
     replace: false,
@@ -48,6 +49,7 @@ angular.module('bootstrap-tagsinput', [])
         select.on('itemAdded', function(event) {
           if (scope.model.indexOf(event.item) === -1) {
             scope.model.push(event.item);
+            scope.onChanged({ list: scope.model });
             scope.$apply();
           }
         });
@@ -56,6 +58,7 @@ angular.module('bootstrap-tagsinput', [])
           var idx = scope.model.indexOf(event.item);
           if (idx !== -1) {
             scope.model.splice(idx, 1);
+            scope.onChanged({ list: scope.model });
             scope.$apply();
           }
         });
